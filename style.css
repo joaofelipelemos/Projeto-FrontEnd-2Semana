@@ -1,29 +1,65 @@
-*{
-    margin: 0 auto;
-
-}
-body{
-    background-color: #f3f3f3;
-    max-width: 1920px;
-    border: 1px solid black ;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600&family=Poppins:wght@500&family=Roboto&display=swap");
+* {
+  margin: 0 auto;
+  text-decoration: none;
+  color: #292929;
 }
 
-.nav_menu{
-display: flex;
-justify-content: space-evenly;
-
-font-size: 1.5rem;
-
+a {
+  color: #292929;
 }
 
-.hero_section_1{
-    width: 400px;
+a:hover {
+  color: #DA2535;
 }
 
-.section_1{
-    display: flex;
+#logo_FoodJP {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
-.section_1 > p{
-    font-size: 4rem;
+#logo_JP {
+  color: #DA2535;
 }
+
+.container {
+  background-color: #FBFBFB;
+  max-width: 1920px;
+  border: 1px solid black;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_menu {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 18px 0 18px 0;
+  text-decoration: none;
+}
+
+.nav_menu_entrar {
+  padding: 18px 60px;
+  border: #292929 2px solid;
+  border-radius: 10px;
+}
+
+#cardapio_option {
+  margin-left: 91px;
+  margin-right: 91px;
+}
+
+.hero_section_1 {
+  width: 400px;
+}
+
+.section_1 {
+  display: flex;
+}
+
+.section_1 > p {
+  font-size: 4rem;
+}/*# sourceMappingURL=style.css.map */

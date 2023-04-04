@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600&family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Desafio 27 - Codelândia</title>
@@ -11,17 +14,18 @@
   <body>
     <!-- NAV MENU-->
     <header>
-      <nav class="nav_menu">
-      <a href="">Food<span>JP</span></a>
+      <nav class="nav_menu container">
+      <p id="logo_FoodJP"><a id="logo_Food" href="">Food<span id="logo_JP">JP</span></a></p>
       <div class="nav_menu_option">
         <a href="#">Início</a>
-        <a href="#">Cardápio</a>
+        <a href="#" id="cardapio_option">Cardápio</a>
         <a href="#">Sobre</a>
       </div>
       <a class="nav_menu_entrar" href="#">Entrar</a>
     </header>
     </nav>
-    <main>
+    <!-- MAIN -->
+    <main class="container">
       <section class="section_1">
         <div>
           <p class="text_section_1">Comida Oriental</p>
