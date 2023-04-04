@@ -10,3 +10,15 @@ $footerTitleFont: 'Poppins', sans-serif;
 $footerContent: 'Roboto', sans-serif;
 
 $radius: 10px;
+
+@mixin title(){
+    font-family: $titleFont;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+@mixin art_description(){
+    font-family: $contentFont;
+    font-size: 1.5rem;
+    font-weight: 400;
+}

@@ -8,7 +8,6 @@
 a {
   color: #292929;
 }
-
 a:hover {
   color: #DA2535;
 }
@@ -23,8 +22,8 @@ a:hover {
 }
 
 .container {
-  background-color: #FBFBFB;
-  max-width: 1920px;
+  width: 90%;
+  max-width: 1200px;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -41,6 +40,7 @@ a:hover {
 }
 
 .nav_menu_entrar {
+  font-size: 1.5rem;
   padding: 18px 60px;
   border: #292929 2px solid;
   border-radius: 10px;
@@ -51,14 +51,23 @@ a:hover {
   margin-right: 91px;
 }
 
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
 .hero_section_1 {
   width: 400px;
 }
 
-.section_1 {
+.flex {
   display: flex;
+  justify-items: center;
 }
 
-.section_1 > p {
-  font-size: 4rem;
+.art_description {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
