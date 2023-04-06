@@ -22,3 +22,31 @@ $radius: 10px;
     font-size: 1.5rem;
     font-weight: 400;
 }
+
+@mixin button(){
+    width: 290px;
+    height: 4rem;
+    background-color: $buttLinksColor;
+    text-align: center;
+    align-items: center;
+    font-family: $contentFont;
+    color: $cardColor;
+    font-size: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin container_section(){
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+@mixin content_section(){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+}

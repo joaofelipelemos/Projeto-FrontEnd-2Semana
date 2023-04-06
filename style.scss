@@ -6,12 +6,39 @@
     text-decoration: none;   
     color: $fontColor;
 }
+
 a{
     color: $fontColor;
     &:hover{
         color: #DA2535;
     }
 }
+.container_section{
+    @include container_section;
+    .content_section{
+        @include content_section;
+    }
+}
+.container_section_bottom{
+    @include container_section;
+    flex-direction: row-reverse;
+    .content_section_bottom{
+        @include content_section;
+        margin-left: 100px;
+    }
+}
+
+.button_high{
+    @include button;
+}
+
+.link_underline{
+    text-decoration: underline;
+    font-family: $contentFont;
+    color: $buttLinksColor;
+    font-size: 1.5rem;
+}
+
 #logo_FoodJP{
     font-family: $titleFont;
     font-weight: 700;
@@ -53,9 +80,6 @@ text-decoration: none;
     @include title;
 }
 
-.hero_section_1{
-    width: 400px;
-}
 
 .flex{
     display: flex;
@@ -64,4 +88,91 @@ text-decoration: none;
 
 .art_description{
     @include art_description;
+}
+
+/*MAIS POPULARES*/
+.populares{
+    width: 100%;
+    margin-top: 100px;
+    .title{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .cards_container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .card{
+            width: 330px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            font-family: $contentFont;
+
+            img{
+                max-height: 280px;
+                max-width: 280px;
+
+                margin-bottom: 1rem;
+            }
+
+            h3{
+                font-size: 2rem;
+            }
+            p{
+                width: 260px;
+                font-size: 20px;
+                text-align: center;
+                
+                margin-top: 10px;
+                margin-bottom: 20px;
+
+
+            }
+            span{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+/*TESTIMONIALS*/
+.testimonials{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .title{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .cards_testimonial_container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-family: $contentFont;
+        font-size: 1.5rem;
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 315px ;
+            width: 500px;
+            padding: 40px;
+            background-color: $bgColor;
+            img{
+                height: 120px;
+                width: 120px;
+            }
+            .testimonial_card_nome{
+                font-size: 2rem;
+            }
+            .testimonial_card_content{
+                font-size: 1.5rem;
+            }
+            div i{
+                color: $buttLinksColor ;
+            }
+        }
+    }
 }
