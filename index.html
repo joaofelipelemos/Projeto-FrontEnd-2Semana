@@ -1,85 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600&family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600&family=Poppins:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Desafio 27 - Codelândia</title>
   </head>
   <body>
     <!-- NAV MENU-->
-    <header>
-      <nav class="nav_menu container">
-      <p id="logo_FoodJP"><a id="logo_Food" href="">Food<span id="logo_JP">JP</span></a></p>
-      <div class="nav_menu_option">
-        <a href="#">Início</a>
-        <a href="#" id="cardapio_option">Cardápio</a>
-        <a href="#">Sobre</a>
-      </div>
-      <a class="nav_menu_entrar" href="#">Entrar</a>
-    </nav>
+    <header class="flex justify-between">
+      <nav class="flex items-center justify-center">
+        <p>
+          <a href="">Food<span>JP</span></a>
+        </p>
+        <div class="font-extrabold hidden">
+          <a href="#">Início</a>
+          <a href="#">Cardápio</a>
+          <a href="#">Sobre</a>
+        </div>
+      </nav>
+      <i class="fa-solid fa-bars"></i>
+      <a class="hidden" href="#">Entrar</a>
     </header>
+    <header></header>
     <!-- MAIN -->
-    <main class="container">
-      <section>
-        <article class="container_section">
-          <div class="content_section">
-            <h2 class="text_section_1 title">Comida Oriental</h2>
-            <p class="art_description">A culinária Japonesa é bastante equilibrada, sendo muito rica em peixes (ômega 3), vegetais, massas e ingredientes frescos.</p>
-            <a class="button_high" href="#">Cardápio</a>
+    <main>
+      <!-- SECTION CONTENT -->
+      <section class="container my-14 w-full">
+        <!-- UPPER CONTENT -->
+        <article class="flex items-center justify-center">
+          <div class="my-5 px-2">
+            <h2 class="text-4xl font-semibold mb-5">Comida Oriental</h2>
+            <p class="text-base my-6">
+              A culinária Japonesa é bastante equilibrada, sendo muito rica em
+              peixes (ômega 3), vegetais, massas e ingredientes frescos.
+            </p>
+            <div
+              class="flex items-center justify-center bg-red-600 text-white rounded-md h-9"
+            >
+              <a class="font-medium" href="#">Cardápio</a>
+            </div>
           </div>
-          <div class="hero_section_1">
-            <img src="/27/image/sushi-japanese.png" alt="">
+          <div class="hidden">
+            <img src="/27/image/sushi-japanese.png" alt="" />
           </div>
         </article>
-        <article class="container_section_bottom">
-          <div class="content_section_bottom">
-            <h2 class="text_section_1 title">Feita de forma tradicional</h2>
-            <p class="art_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a class="link_underline" href="#">Ler mais sobre o modo de preparo </a>
-          </div>
-          <div class="hero_section_1">
-            <img src="/27/image/img segurando prato.png" alt="">
+        <!-- LOWER CONTENT -->
+        <article class="flex items-center justify-center">
+          <div class="my-9 px-2 text-center">
+            <img
+              class="rounded-lg mb-14 md:hidden"
+              src="/27/image/img segurando prato.png"
+              alt=""
+            />
+            <h2 class="text-4xl font-semibold mb-5">
+              Feita de forma Tradicional
+            </h2>
+            <p class="text-base my-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a class="font-medium hover:text-red-600" href="#"
+              >Ler mais sobre o modo de preparo
+            </a>
+            <img
+              class="hidden"
+              src="/27/image/img segurando prato.png"
+              alt=""
+            />
           </div>
         </article>
-        <article class="populares">
-          <h2 class="title">Mais populares</h2>
-          <div class="cards_container">
-            <div class="card">
-              <img src="27/image/img-1.png" alt="">
-              </img>
-              <h3>Ramen de Frango</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <span>R$ 30</span>
-              </div>
-            <div class="card">
-              <img src="27/image/img-2.png" alt="">
-              </img>
-              <h3>Ramen Apimentado</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <span>R$ 30</span>
+        <!-- POPULARES -->
+        <article class="flex items-center justify-center flex-col">
+          <h2 class="text-4xl font-semibold mt-20 mb-10">Mais populares</h2>
+          <!-- CARDS CONTAINER -->
+          <div class="text-center space-y-6">
+            <!-- CARDS -->
+            <div class="flex flex-col items-center justify-center p-2">
+              <img src="27/image/img-1.png" alt="" />
+              <h3 class="text-2xl font-medium">Ramen de Frango</h3>
+              <p class="text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <span class="text-4xl">R$ 30</span>
             </div>
-            <div class="card">
-              <img src="27/image/img-3.png" alt="">
-              </img>
-              <h3>Ramen Tradicional</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <span>R$ 30</span>
+            <div class="flex flex-col items-center justify-center p-2">
+              <img src="27/image/img-1.png" alt="" />
+              <h3 class="text-2xl font-medium">Ramen de Frango</h3>
+              <p class="text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <span class="text-4xl">R$ 30</span>
             </div>
+            <div class="flex flex-col items-center justify-center p-2">
+              <img src="27/image/img-1.png" alt="" />
+              <h3 class="text-2xl font-medium">Ramen de Frango</h3>
+              <p class="text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <span class="text-4xl">R$ 30</span>
+            </div>
+          </div>
         </article>
       </section>
-      <section class="testimonials">
-        <h3 class="title">Comentários</h3>
-        <div class="cards_testimonial_container">
-          <div class="card">
-            <img src="27/image/profile1.png" alt="">
-            <p class="testimonial_card_nome">Daniele Almeida</p>
-            <p class="testimonial_card_content">Ótimo serviço! Encantada com a qualidade dos pratos.</p>
+      <!-- COMENTARIOS -->
+      <section class="w-11/12 mx-auto">
+        <h2 class="text-4xl font-semibold mb-5 text-center">Comentários</h2>
+        <!-- CARDS CONTAINER -->
+        <div class="my-3 space-y-10">
+          <!-- CARDS -->
+          <div
+            class="flex justify-center items-center flex-col text-center my-2"
+          >
+            <img
+              class="h-32"
+              src="https://github.com/joaofelipelemos.png"
+              alt=""
+            />
+            <p class="text-xl font-semibold mb-2">Daniele Almeida</p>
+            <div>
+              <p class="mb-2">
+                Ótimo serviço! Encantada com a qualidade dos pratos.
+              </p>
+            </div>
             <div>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -88,31 +138,72 @@
               <i class="fa-solid fa-star"></i>
             </div>
           </div>
-          <div class="card">
-            <img src="27/image/profile2.png" alt="">
-            <p class="testimonial_card_nome">Ricardo França</p>
-            <p class="testimonial_card_content">Não é apenas a comida excelente, o serviço torna a experiência especial.</p>
+          <div
+            class="flex justify-center items-center flex-col text-center my-2"
+          >
+            <img class="h-32" src="27/image/profile1.png" alt="" />
+            <p class="text-xl font-semibold mb-2">Ricardo França</p>
             <div>
-              <i id="stars" class="fa-solid fa-star"></i>
-              <i id="stars" class="fa-solid fa-star"></i>
-              <i id="stars" class="fa-solid fa-star"></i>
-              <i id="stars" class="fa-solid fa-star"></i>
-              <i id="stars" class="fa-solid fa-star"></i>
+              <p class="mb-2">
+                Não é apenas a comida excelente, o serviço torna a experiência
+                especial.
+              </p>
+            </div>
+            <div>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
           </div>
         </div>
-    </section>
-      <section>
-        <h3 class="title">Localização</h3>
-        <div style="overflow:hidden;width: 1220px;position: relative;"><iframe width="1220" height="500" src="https://maps.google.com/maps?width=1220&amp;height=500&amp;hl=en&amp;q=Botafogo%2C%20Rio%20de%20Janeiro+(T%C3%ADtulo)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="embedgooglemaps.com/pt/">embedgooglemaps PT</a> & <a href="https://xn--snabbln5000-28a.com/lana-2000/">låna 2000 utan uc</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
       </section>
-      <div class="flex">
-        <input type="text">
-        <input type="button" value="buscar">
-      </div>
+      <!-- LOCALIZAÇÃO -->
+      <section>
+        <h3 class="text-4xl font-semibold mb-5 text-center mt-5">
+          Localização
+        </h3>
+        <div>
+          <iframe
+            width="350"
+            height="350"
+            src="https://maps.google.com/maps?width=1220&amp;height=500&amp;hl=en&amp;q=Botafogo%2C%20Rio%20de%20Janeiro+(T%C3%ADtulo)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"
+          ></iframe>
+        </div>
+      </section>
+      <!-- INPUT PEDIDO LOCALIZAÇAO -->
+      <aside class="my-8 flex items-center justify-center">
+        <input class="border-2 w-4/5" type="text" />
+        <input
+          class="bg-indigo-500 text-white rounded-br-md rounded-tr-md w-fill px-2"
+          type="button"
+          value="buscar"
+        />
+      </aside>
+      <footer class="mt-8">
+        <p>Contato</p>
+        <ul>
+          <li>+5521983994911</li>
+          <li>lemos391@gmail.com</li>
+        </ul>
+        <p>Serviços</p>
+        <ul>
+          <li>Lorem</li>
+          <li>Lorem</li>
+        </ul>
+        <p>Sobre nós</p>
+        <ul>
+          <li>Menu</li>
+          <li>Valores</li>
+          <li>Página Principal</li>
+        </ul>
+      </footer>
     </main>
 
-
-  <script src="https://kit.fontawesome.com/542f94c32f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/542f94c32f.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
