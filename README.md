@@ -13,3 +13,7 @@ Foi desenvolvido utilizando a metodologia Mobile First, que combinado com Tailwi
 
 
 Estou trabalhando para trazer uma boa vizualiação no desktop neste momento.
+
+
+![FoodJP](https://user-images.githubusercontent.com/96138146/230656688-5c8c05cb-c602-4a96-83e0-1f6762ee484b.jpg)
+
