@@ -54,7 +54,7 @@
               <a class="font-medium" href="#">Cardápio</a>
             </div>
           </div>
-          <div class="w-96">
+          <div class="w-96 p-3">
             <img src="/27/image/sushi-japanese.png" alt="" />
           </div>
         </article>
@@ -89,11 +89,11 @@
           <h2 class="text-4xl font-semibold mt-20 mb-10">Mais populares</h2>
           <!-- CARDS CONTAINER -->
           <div
-            class="flex items-center justify-center flex-col lg:flex-row text-center space-y-6"
+            class="flex items-center justify-center flex-col lg:flex-row text-center gap-6"
           >
             <!-- CARDS -->
             <div class="flex flex-col items-center justify-center p-2">
-              <img src="27/image/img-1.png" alt="" />
+              <img class="h-60" src="27/image/img-1.png" alt="" />
               <h3 class="text-2xl font-medium">Ramen de Frango</h3>
               <p class="text-base">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -101,15 +101,15 @@
               <span class="text-4xl">R$ 30</span>
             </div>
             <div class="flex flex-col items-center justify-center p-2">
-              <img src="27/image/img-1.png" alt="" />
-              <h3 class="text-2xl font-medium">Ramen de Frango</h3>
+              <img class="h-60" src="27/image/img-2.png" alt="" />
+              <h3 class="text-2xl font-medium">Ramen Apimentado</h3>
               <p class="text-base">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <span class="text-4xl">R$ 30</span>
             </div>
             <div class="flex flex-col items-center justify-center p-2">
-              <img src="27/image/img-1.png" alt="" />
+              <img class="h-60" src="27/image/img-1.png" alt="" />
               <h3 class="text-2xl font-medium">Ramen de Frango</h3>
               <p class="text-base">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -120,20 +120,22 @@
         </article>
       </section>
       <!-- COMENTARIOS -->
-      <section class="w-11/12 mx-auto">
+      <section class="w-11/12 m-auto">
         <h2 class="text-4xl font-semibold mb-5 text-center">Comentários</h2>
         <!-- CARDS CONTAINER -->
-        <div class="my-3 md:space-y-10 lg:flex flex-row">
+        <div
+          class="my-3 md:gap-4 flex flex-col items-center justify-center md:space-y-10 lg:flex md:flex-row"
+        >
           <!-- CARDS -->
           <div
-            class="flex justify-center items-center flex-col text-center my-2 mx-auto max-w-sm"
+            class="flex justify-center items-center flex-col text-center mx-auto max-w-sm mb-7 md:mb-1"
           >
             <img
               class="h-32"
               src="https://github.com/joaofelipelemos.png"
               alt=""
             />
-            <p class="text-xl font-semibold mb-2">Daniele Almeida</p>
+            <p class="text-xl font-semibold mb-2">João Felipe</p>
             <div>
               <p class="mb-2">
                 Ótimo serviço! Encantada com a qualidade dos pratos.
@@ -148,13 +150,9 @@
             </div>
           </div>
           <div
-            class="flex justify-center items-center flex-col text-center my-2 mx-auto max-w-sm"
+            class="flex justify-center items-center flex-col text-center m-auto max-w-sm"
           >
-            <img
-              class="h-32"
-              src="https://github.com/joaofelipelemos.png"
-              alt=""
-            />
+            <img class="h-32" src="/27/image/profile1.png" alt="" />
             <p class="text-xl font-semibold mb-2">Daniele Almeida</p>
             <div>
               <p class="mb-2">
@@ -192,23 +190,23 @@
           value="buscar"
         />
       </aside>
-      <footer class="mt-8">
-        <p>Contato</p>
-        <ul>
-          <li>+5521983994911</li>
-          <li>lemos391@gmail.com</li>
-        </ul>
-        <p>Serviços</p>
-        <ul>
-          <li>Lorem</li>
-          <li>Lorem</li>
-        </ul>
-        <p>Sobre nós</p>
-        <ul>
-          <li>Menu</li>
-          <li>Valores</li>
-          <li>Página Principal</li>
-        </ul>
+      <footer class="mt-8 flex flex-wrap justify-start pb-12 gap-4">
+        <div class="m-auto order-1">
+          <h4 class="text-2xl pb-4">Contato</h4>
+          <p>+5521983994911</p>
+          <p>lemos391@gmail.com</p>
+        </div>
+        <div class="m-auto order-3">
+          <h4 class="text-2xl pb-4">Serviços</h4>
+          <p>Entrega</p>
+          <p>Retire</p>
+        </div>
+        <div class="m-auto order-2">
+          <h4 class="text-2xl pb-4">Sobre nós</h4>
+          <p>Menu</p>
+          <p>Valores</p>
+          <p>Página Principal</p>
+        </div>
       </footer>
     </main>
 
