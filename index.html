@@ -13,53 +13,58 @@
     />
     <title>Desafio 27 - Codelândia</title>
   </head>
-  <body>
+  <body class="md:w-11/12">
     <!-- NAV MENU-->
-    <header class="flex justify-between">
-      <nav class="flex items-center justify-center">
-        <p>
-          <a href="">Food<span>JP</span></a>
+    <header class="container mt-8 mx-auto">
+      <nav class="flex justify-between items-center">
+        <p class="text-xl font-bold">
+          <a href="">
+            <span class="hover:text-red-500">Food</span><span class="">JP</span>
+          </a>
         </p>
-        <div class="font-extrabold hidden">
-          <a href="#">Início</a>
-          <a href="#">Cardápio</a>
-          <a href="#">Sobre</a>
+        <div class="font-extrabold space-x-5">
+          <a class="hover:underline" href="#">Início</a>
+          <a class="hover:underline" href="#">Cardápio</a>
+          <a class="hover:underline" href="#">Sobre</a>
         </div>
+        <a class="gap-4 border hover:bg-red-500 hover:text-white px-1" href="#"
+          >Entrar</a
+        >
       </nav>
-      <i class="fa-solid fa-bars"></i>
-      <a class="hidden" href="#">Entrar</a>
+      <i class="hidden"></i>
     </header>
     <header></header>
     <!-- MAIN -->
     <main>
       <!-- SECTION CONTENT -->
-      <section class="container my-14 w-full">
+      <section class="container my-14 w-full mx-auto space-y-8">
         <!-- UPPER CONTENT -->
-        <article class="flex items-center justify-center">
-          <div class="my-5 px-2">
+        <article
+          class="container flex items-center flex-col justify-between mx-auto sm:flex-row"
+        >
+          <div class="my-5 px-2 w-11/12 md:w-5/6 lg:w-6/12">
             <h2 class="text-4xl font-semibold mb-5">Comida Oriental</h2>
             <p class="text-base my-6">
               A culinária Japonesa é bastante equilibrada, sendo muito rica em
               peixes (ômega 3), vegetais, massas e ingredientes frescos.
             </p>
             <div
-              class="flex items-center justify-center bg-red-600 text-white rounded-md h-9"
+              class="container flex items-center justify-center bg-red-600 text-white rounded-md h-9"
             >
               <a class="font-medium" href="#">Cardápio</a>
             </div>
           </div>
-          <div class="hidden">
+          <div class="w-96">
             <img src="/27/image/sushi-japanese.png" alt="" />
           </div>
         </article>
         <!-- LOWER CONTENT -->
-        <article class="flex items-center justify-center">
-          <div class="my-9 px-2 text-center">
-            <img
-              class="rounded-lg mb-14 md:hidden"
-              src="/27/image/img segurando prato.png"
-              alt=""
-            />
+        <article
+          class="container flex items-center justify-between md:flex-row-reverse mx-auto"
+        >
+          <div
+            class="my-5 px-2 w-11/12 text-center mx-auto lg:w-5/12 lg:text-left"
+          >
             <h2 class="text-4xl font-semibold mb-5">
               Feita de forma Tradicional
             </h2>
@@ -67,21 +72,25 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <a class="font-medium hover:text-red-600" href="#"
-              >Ler mais sobre o modo de preparo
-            </a>
-            <img
-              class="hidden"
-              src="/27/image/img segurando prato.png"
-              alt=""
-            />
+            <div
+              class="container flex items-center justify-center text-black hover:text-red-500 h-9"
+            >
+              <a class="font-medium" href="#"
+                >Ler mais sobre o modo de preparo
+              </a>
+            </div>
+          </div>
+          <div class="hidden w-96">
+            <img src="/27/image/img segurando prato.png" alt="" />
           </div>
         </article>
         <!-- POPULARES -->
         <article class="flex items-center justify-center flex-col">
           <h2 class="text-4xl font-semibold mt-20 mb-10">Mais populares</h2>
           <!-- CARDS CONTAINER -->
-          <div class="text-center space-y-6">
+          <div
+            class="flex items-center justify-center flex-col lg:flex-row text-center space-y-6"
+          >
             <!-- CARDS -->
             <div class="flex flex-col items-center justify-center p-2">
               <img src="27/image/img-1.png" alt="" />
@@ -114,10 +123,10 @@
       <section class="w-11/12 mx-auto">
         <h2 class="text-4xl font-semibold mb-5 text-center">Comentários</h2>
         <!-- CARDS CONTAINER -->
-        <div class="my-3 space-y-10">
+        <div class="my-3 md:space-y-10 lg:flex flex-row">
           <!-- CARDS -->
           <div
-            class="flex justify-center items-center flex-col text-center my-2"
+            class="flex justify-center items-center flex-col text-center my-2 mx-auto max-w-sm"
           >
             <img
               class="h-32"
@@ -139,14 +148,17 @@
             </div>
           </div>
           <div
-            class="flex justify-center items-center flex-col text-center my-2"
+            class="flex justify-center items-center flex-col text-center my-2 mx-auto max-w-sm"
           >
-            <img class="h-32" src="27/image/profile1.png" alt="" />
-            <p class="text-xl font-semibold mb-2">Ricardo França</p>
+            <img
+              class="h-32"
+              src="https://github.com/joaofelipelemos.png"
+              alt=""
+            />
+            <p class="text-xl font-semibold mb-2">Daniele Almeida</p>
             <div>
               <p class="mb-2">
-                Não é apenas a comida excelente, o serviço torna a experiência
-                especial.
+                Ótimo serviço! Encantada com a qualidade dos pratos.
               </p>
             </div>
             <div>
@@ -164,10 +176,9 @@
         <h3 class="text-4xl font-semibold mb-5 text-center mt-5">
           Localização
         </h3>
-        <div>
+        <div class="w-fit">
           <iframe
-            width="350"
-            height="350"
+            class="w-auto"
             src="https://maps.google.com/maps?width=1220&amp;height=500&amp;hl=en&amp;q=Botafogo%2C%20Rio%20de%20Janeiro+(T%C3%ADtulo)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"
           ></iframe>
         </div>

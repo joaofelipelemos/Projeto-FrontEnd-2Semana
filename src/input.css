@@ -5,6 +5,6 @@
 body {
   @apply container;
   @apply h-screen;
-  @apply w-11/12;
+  @apply max-w-6xl;
   @apply mx-auto;
 }
