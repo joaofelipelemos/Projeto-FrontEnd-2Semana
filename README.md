@@ -1,15 +1,15 @@
 # Segundo projeto da mentoria Conquiste Sua Vaga
 
 Este é o segundo projeto realizado dentro da mentoria.
-Este é um dos projetos(#27) que constam nos Desafios da Codelandia, ele é focado em Front-End com o objetivo de treinar o CSS que aprendi e vi novamente durante a semana.
+Este é um dos projetos(#27) que constam nos Desafios da Codelandia.
+Uma landing page de um restaurante oriental. 
 
-Neste projeto estou aplicando, além de CSS com TailwindCSS, HTML e JavaScript.
+Este desafio foi focado em Front-End com o objetivo de treinar o CSS que aprendi e vi novamente durante a semana.
+
+Neste projeto estou aplicando HTML, além de CSS com TailwindCSS.
 
 Foi desenvolvido utilizando a metodologia Mobile First, que combinado com TailwindCSS nos tras um grande boost de produtividade.
 
-
-
-Estou trabalhando para trazer uma boa vizualiação no desktop neste momento.
 
 **Prints do layout a ser criado do desafio:**
 
